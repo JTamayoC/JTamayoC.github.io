@@ -1,0 +1,93 @@
+  html{
+      background-color: white;
+  } 
+  body{
+    text-align: center;
+    background: ghostwhite;
+  }
+  h3{
+    display: inline;
+    margin-left: 15px;
+  }
+
+  h1{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #000000;
+  }
+
+  #foto{
+    padding: 15px;
+    display: inline-block;
+    margin-top: -35px;
+    border-radius: 25px;
+    background: rgb(255, 255, 255);
+  }
+
+  #nombre{
+    text-align: center;
+    color: #000000;
+  }
+
+  #header{
+    background-color:
+  rgb(20, 20, 20);
+    width: 100%;
+    height: 100px;
+    border-radius: 0px 0px 50px 50px;
+  }
+
+  #container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(180px, auto);
+    grid-auto-flow: dense;
+    padding-inline: 2%;
+  }
+
+  #i1, #i2, #i3, #i4, #i5, #i6{
+    color: rgb(0, 32, 96);
+  }
+  
+  .idented{
+    margin-left: 60px;
+  }
+
+  .tittle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15;
+    font-style: bold;
+    color: rgb(0, 32, 96);
+  }
+
+  .paragraph{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12;
+  }
+
+  .pequenio1{
+    font-size: 10px;
+  }
+
+  .pequenio2{
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  .lista{
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: initial;
+    border-radius: 5px;
+  }
+
+  .lista2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 45px;
+    display: table-footer-group;
+  }
