@@ -3,7 +3,8 @@
   } 
   body{
     text-align: center;
-    background: ghostwhite;
+    background: white;
+    display: grid;
   }
   h3{
     display: inline;
