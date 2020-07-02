@@ -1,70 +1,84 @@
-  html, body {
-    background: rgb(20,20,20);
-    text-align: center;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  ul {
-    list-style: none;
-    display: ruby-base-container;
- }
+html,
+body {
+  background: rgb(20, 20, 20);
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+}
+.svg-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  width: 320px;
+}
 
-  .svg-wrapper {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    width: 320px;  
-  }
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #3f19f6;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
 
-  .shape {
-    stroke-dasharray: 140 540;
-    stroke-dashoffset: -474;
-    stroke-width: 8px;
-    fill: transparent;
-    stroke: #3f19f6;
-    border-bottom: 5px solid black;
-    transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-  }
+.text {
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: #fff;
+  top: -48px;
+  position: relative;
+}
 
-  .text {
-    font-family: 'Roboto Condensed';
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: 8px;
-    color: #fff;
-    top: -48px;
-    position: relative;
-  }
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
 
-  .svg-wrapper:hover .shape {
-    stroke-width: 2px;
-    stroke-dashoffset: 0;
-    stroke-dasharray: 760;
-  }
+.a:link,
+.a:visited,
+.listElement:link,
+.listElement:visited {
+  background-color: rgb(20, 20, 20);
+  color: white;
+  margin: 15px;
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+}
 
- .a:link, .a:visited {
-    background-color: rgb(20,20,20);
-    color: white;
-    margin: 15px;
-    padding: 2px 2px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 50%;
-  }
-  
-  .a:hover, .a:active {
-    background-color: rgb(131, 120, 120);
-  }
-  
-  #titulo{
-    text-decoration: none;
-    color: white;
- }
+.a:hover,
+.a:active,
+.listElement:hover,
+.listElement:active {
+  background-color: rgb(131, 120, 120);
+}
 
-  #media{
-   top: 60%;
-   position: relative;
- }
+#titulo {
+  text-decoration: none;
+  color: white;
+}
+.wrapper {
+  top: 60%;
+  position: relative;
+  text-align: center;
+}
+.wrapper ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* For IE, the outcast */
+  zoom: 1;
+  *display: inline;
+}
+.wrapper li {
+  float: left;
+  padding: 2px 5px;
+}
