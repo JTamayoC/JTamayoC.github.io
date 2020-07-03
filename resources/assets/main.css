@@ -13,12 +13,27 @@ body {
   width: 320px;
 }
 
+.w3-opacity,
+.w3-hover-opacity:hover {
+  opacity: 0.6;
+}
+.w3-opacity-off,
+.w3-hover-opacity-off:hover {
+  opacity: 1;
+}
+.w3-opacity-max {
+  opacity: 0.25;
+}
+.w3-opacity-min {
+  opacity: 0.75;
+}
+
 .shape {
   stroke-dasharray: 140 540;
   stroke-dashoffset: -474;
   stroke-width: 8px;
   fill: transparent;
-  stroke: #3f19f6;
+  stroke: #9932cc;
   border-bottom: 5px solid black;
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
@@ -39,26 +54,13 @@ body {
   stroke-dasharray: 760;
 }
 
-.a:link,
-.a:visited,
-.listElement:link,
-.listElement:visited {
-  background-color: rgb(20, 20, 20);
-  color: white;
-  margin: 15px;
-  padding: 2px 2px;
-  text-align: center;
+
+a {
+  background-color: transparent;
   text-decoration: none;
-  display: inline-block;
-  border-radius: 50%;
+  color: white;
 }
 
-.a:hover,
-.a:active,
-.listElement:hover,
-.listElement:active {
-  background-color: rgb(131, 120, 120);
-}
 
 #titulo {
   text-decoration: none;
