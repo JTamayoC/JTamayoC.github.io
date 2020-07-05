@@ -106,7 +106,7 @@
                     </div>
                     <div class="w3-container">
                         <h5 class="w3-opacity"><b>Técnico laboral en análisis y sistema de información / Los Córdobas, Córdoba</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014
+                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Ene 2015 - Dec 2016
                         </h6>
                         <p>Institución: Centro de estudios técnicos CEPRODENT</p>
                         <a download="certificadoTECNICO.jpg" href="../assets/images/certificadoTECNICO.jpg">
@@ -205,17 +205,17 @@
 
 </body>
 <script>
-    var knowsTittle = ["NodeJS", "JavaScript", "HTML5", "CSS", "Bootstrap", "PostgreSQL", 
+    var chipsTittle = ["NodeJS", "Java", "JavaScript", "HTML5", "CSS", "Bootstrap", "PostgreSQL", 
     "Vuetify", "Firebase", "MongoDB", "GitHub", "Heroku", 
-    "Android Studio", "Photoshop", "SketchUp", "Oficce"];
-    var knowsIcon = ["fab fa-node-js", "fab fa-js-square", "fab fa-html5", "fab fa-css3-alt", 
+    "Android Studio", "Photoshop", "SketchUp", "Oficce", "Scrum"];
+    var chipsIcon = ["fab fa-node-js", "fab fa-java", "fab fa-js-square", "fab fa-html5", "fab fa-css3-alt", 
     "fab fa-bootstrap", "fas fa-database", "fab fa-vuejs", "fas fa-cloud-upload-alt", 
     "fas fa-cloud", "fab fa-github-square", "fas fa-code-branch", 
-    "fab fa-android", "fas fa-photo-video", "fas fa-cubes", "fas fa-mail-bulk"];
+    "fab fa-android", "fas fa-photo-video", "fas fa-cubes", "fas fa-mail-bulk", "fas fa-users"];
     var i, len, text;
     for (i = 0, len = knowsTittle.length, text = ""; i < len; i++) {
         var randomColor = "#" + ((1 << 24) * Math.random() | 0).toString(16);
-        text += '<div class="chip w3-hover-opacity" style="background-color:'+randomColor+';"><i class="'+'icons '+knowsIcon[i]+'"></i> '+'    '+knowsTittle[i]+'</div>';
+        text += '<div class="chip w3-hover-opacity" style="background-color:'+randomColor+';"><i class="'+'icons '+chipsIcon[i]+'"></i> '+'    '+chipsTittle[i]+'</div>';
     }
     document.getElementById("chips").innerHTML = text;
 </script>
